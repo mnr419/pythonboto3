@@ -5,8 +5,8 @@ import boto3
 ec2 = boto3.client('ec2')
 
 # Stop the instance
-instance_id = 'i-08c2f7cd1efe994c8'
+instance_id = 'i-0b4c51b8dd01d748f'
 
 ec2.terminate_instances(InstanceIds=[instance_id])
 
-print(f'Stopped the instance {instance_id}')
+print(f'Terminated the instance {instance_id}')
